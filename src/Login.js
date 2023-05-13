@@ -34,18 +34,18 @@ function Login() {
       <header className="App-header">
         <div className="login-container">
           <h2>Login</h2>
-          <div id="login-form" >
-            <label htmlFor="username">Username</label><br />
+          <div id="login-form"  >
+            <label htmlFor="username">Username</label>
             <input type="text" id="username" name="username" onChange={(event) => {
               formik.setFieldValue("username", event.target.value)
             }} values={formik.values.username} /><br />
 
-            <label htmlFor="password">Password</label><br />
+            <label htmlFor="password">Password</label>
             <input type="password" id="password" name="password" onChange={(event) => {
               formik.setFieldValue("password", event.target.value)
-            }} values={formik.values.password} /><br />
+            }} values={formik.values.password} />
 
-            <button type="submit" onClick={(event) => {
+            <button id="submit-button"type="submit" onClick={(event) => {
               event.preventDefault()
               formik.submitForm()
             }}>Login</button>

@@ -18,6 +18,15 @@
   color: white;
 }
 
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-button{
+  margin-top: 10px;
+}
+
 button {
   font-size: 1.2rem;
   padding: 5px 30px;
